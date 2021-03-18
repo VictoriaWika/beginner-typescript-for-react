@@ -69,6 +69,7 @@ function App() {
         {loading && <Status>Loading...⏰</Status>}
         {error && <Status>Nothing found 😢</Status>}
         <Section>
+          <Character name="Jerry" image="https://rickandmortyapi.com/api/character/avatar/5.jpeg" status="Alive"/>
           {characters?.map((character) => (
             <Character key={character.id} {...character} />
           ))}
